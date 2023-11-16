@@ -28,3 +28,15 @@ class Manager extends Employee {
         console.log('Je suis le manager');
     }
 }
+
+// Exercice 5: Créez une classe abstraite Employee avec une méthode abstraite getSalary et héritez-en dans Manager.
+
+abstract class Employee2 {
+    abstract getSalary(): number;
+}
+
+class Manager2 extends Employee2 {
+    getSalary(): number {
+        return 1000;
+    }
+}
